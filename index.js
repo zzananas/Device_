@@ -15,16 +15,7 @@
 // });
 
 
-// SLIDERS
-
-$(function() {
-  $(".slider_buttons > *").mouseover(function(e) {
-    $(".slider2_txt").toggleClass("active");
-});
-    $(".nav_btn").mouseout(function(e) {
-      $(".slider2_txt").toggleClass("active");
-  });
-});
+// SLIDER 1
 
 
 
@@ -55,7 +46,7 @@ $(function(){
 });
 
 
-// BTN
+// BTN DELIVERY
 
 $(function() {
   $(".nav_btn").mouseover(function(e) {
@@ -125,3 +116,5 @@ $(function() {
 
 
 
+// ICONS WHITE
+ 
