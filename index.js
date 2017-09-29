@@ -1,4 +1,17 @@
-// $(document).ready(function(){
+$(document).ready(function(){
+
+    $(".nav_btn").hover(btn_hover_handler, btn_hover_handler);
+
+    function btn_hover_handler() {
+        index = $(this).index();
+        $(this).find(".btn_wrap").toggleClass("hide");
+        $($(".description__block")[index]).toggleClass("overlay");
+    };
+});
+
+
+
+
 //   var $slider_first = $(".slider1 > *:first-child");
 //   var $slider_first = $(".slider1_txt");
 //   });
@@ -46,73 +59,74 @@ $(function(){
 });
 
 
+
+
 // BTN DELIVERY
 
-$(function() {
-  $(".nav_btn").mouseover(function(e) {
-    $(".btn_wrap").toggleClass("hide");
-});
-    $(".nav_btn").mouseout(function(e) {
-      $(".btn_wrap").toggleClass("hide");
-  });
-});
+// $(function() {
+//   $(".nav_btn").mouseover(function(e) {
+//     $(".btn_wrap").toggleClass("hide");
+// });
+//     $(".nav_btn").mouseout(function(e) {
+//       $(".btn_wrap").toggleClass("hide");
+//   });
+// });
 
-$(function() {
-  $(".nav_btn").mouseover(function(e) {
-    $(".description__block").toggleClass("overlay");
-});
-    $(".nav_btn").mouseout(function(e) {
-      $(".description__block").toggleClass("overlay");
-  });
-});
-
-
-// BTN2
+// $(function() {
+//   $(".nav_btn").mouseover(function(e) {
+//     $(".description__block").toggleClass("overlay");
+// });
+//     $(".nav_btn").mouseout(function(e) {
+//       $(".description__block").toggleClass("overlay");
+//   });
+// });
 
 
-
-
-$(function() {
-  $(".nav_btn2").mouseover(function(e) {
-    $(".description__block2").toggleClass("overlay");
-});
-    $(".nav_btn2").mouseout(function(e) {
-      $(".description__block2").toggleClass("overlay");
-  });
-});
-
-
-$(function() {
-  $(".nav_btn2").mouseover(function(e) {
-    $(".btn_wrap2").toggleClass("hide");
-});
-    $(".nav_btn2").mouseout(function(e) {
-      $(".btn_wrap2").toggleClass("hide");
-  });
-});
+// // BTN2
 
 
 
 
-// BTN3
+// $(function() {
+//   $(".nav_btn2").mouseover(function(e) {
+//     $(".btn_wrap2").toggleClass("hide");
+// });
+//     $(".nav_btn2").mouseout(function(e) {
+//       $(".btn_wrap2").toggleClass("hide");
+//   });
+// });
 
-$(function() {
-  $(".nav_btn3").mouseover(function(e) {
-    $(".btn_wrap3").toggleClass("hide");
-});
-    $(".nav_btn3").mouseout(function(e) {
-      $(".btn_wrap3").toggleClass("hide");
-  });
-}); 
 
-$(function() {
-  $(".nav_btn3").mouseover(function(e) {
-    $(".description__block3").toggleClass("overlay");
-});
-    $(".nav_btn3").mouseout(function(e) {
-      $(".description__block3").toggleClass("overlay");
-  });
-}); 
+// $(function() {
+//   $(".nav_btn2").mouseover(function(e) {
+//     $(".description__block2").toggleClass("overlay");
+// });
+//     $(".nav_btn2").mouseout(function(e) {
+//       $(".description__block2").toggleClass("overlay");
+//   });
+// });
+
+
+
+// // BTN3
+
+// $(function() {
+//   $(".nav_btn3").mouseover(function(e) {
+//     $(".btn_wrap3").toggleClass("hide");
+// });
+//     $(".nav_btn3").mouseout(function(e) {
+//       $(".btn_wrap3").toggleClass("hide");
+//   });
+// }); 
+
+// $(function() {
+//   $(".nav_btn3").mouseover(function(e) {
+//     $(".description__block3").toggleClass("overlay");
+// });
+//     $(".nav_btn3").mouseout(function(e) {
+//       $(".description__block3").toggleClass("overlay");
+//   });
+// }); 
 
 
 
