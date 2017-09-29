@@ -5,14 +5,15 @@
     <link rel="stylesheet" href="style.css">
     <meta charset="utf-8">
     <title>device</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vivus@latest/dist/vivus.min.js"></script>
-    <script src="index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vivus@latest/dist/vivus.min.js" type="text/javascript"></script>
+    <script src="jquery.mousewheel.min.js" type="text/javascript"></script>
+    <script src="index.js" type="text/javascript"></script>
   </head>
   <body src="URL">
     
-        <header class="main_header">
-          <div class="container">
+    <header class="main_header">
+      <div class="container">
           <div class="navigation_header">
               <a class="device_logo" href="#">
                   <span>DEVICE</span>
@@ -75,10 +76,15 @@
                 </div>
               </div>
           </div>  
-      <div class="slider1">
+    <div class="slider_buttons">
+        <div class="active1"></div>
+        <div class="active2"></div>
+        <div class="active3"></div>
+      </div>
 
-<!-- 
+      <div class="slider1">      
           <div class="slider1_txt">
+            <div class="slider-inner">
               <img class="img_1" src="img/slider-1.png" alt="">
               
                 <div class="slider_1_txt">
@@ -106,11 +112,14 @@
                   </div>
                   <img class="img_01" src="img/01.png" alt="">
                 </div>
-          </div> -->
+            </div>
+          </div>
          
         
 
-          <!-- <div class="slider2_txt">
+          <div class="slider2_txt">
+              <div class="slider-inner">
+                  
                 <img class="img_1" src="img/slider-2.png" alt="">
                 
                   <div class="slider_1_txt">
@@ -130,10 +139,13 @@
                     </div>
                     <img class="img_01" src="img/02.png" alt="">
                   </div>
-            </div> -->
+              </div>
+            </div>
 
 
             <div class="slider3_txt">
+                <div class="slider-inner">
+                    
                 <img class="img_1" src="img/slider-3.png" alt="">
                 
                   <div class="slider_1_txt">
@@ -158,6 +170,7 @@
                     </div>
                     <img class="img_01" src="img/03.png" alt="">
                   </div>
+              </div>
             </div>
 
 
@@ -179,11 +192,6 @@
       
    
       <div class="container">
-      <div class="slider_buttons">
-        <div class="active1"></div>
-        <div class="active2"></div>
-        <div class="active3"></div>
-      </div>
         <div class="icons_container">
 
           <div class="bacgr_icons_container"><a href="#" class="backgr_icons"><img class="icons_png" src="img/popular-1.png" width="101" height="56"></a>
@@ -207,7 +215,7 @@
        <div class="discription__container">
         <div class="description__nav">
           <div class="nav_container">
-              <a href="#" class="nav_btn">            
+              <a href="#" class="nav_btn active">            
                 <div class="btn_wrap">
                       <span class="span_slider3">Доставка</span>
                 </div> 
