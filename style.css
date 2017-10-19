@@ -518,7 +518,7 @@ a:active {
   width: 100%;
   margin: 85px 0;
 }
-.discription__container {
+.description__container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -528,8 +528,9 @@ a:active {
   position: absolute;
 }
 .background_description {
+  position: absolute;
   height: 290px;
-  margin-top: 95px;
+  margin-top: 180px;
   width: 100%;
   background-color: #e5e5e5;
 }
