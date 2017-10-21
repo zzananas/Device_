@@ -25,6 +25,16 @@ $(function(){
     $(".modal_close_img").click(function(e) {
         $(".modal_window").toggleClass("active");
       });
+      $(".user_block").click(function(e) {
+        $(".modal_overlay").toggleClass("active");
+      });
+      $(".modal_close_img").click(function(e) {
+        $(".modal_overlay").toggleClass("active");
+      });
+      $(".modal_overlay").click(function(e) {
+        $(".modal_overlay").toggleClass("active");
+        $(".modal_window").toggleClass("active");
+      });
   });
 
 
@@ -120,24 +130,6 @@ $(".nav_btn").hover(btn_hover_on);
   
      
     $(function(){
-        $(".slider_buttons__radio1").mouseover(function(e) {
-          $(".slider1_txt").addClass("active");
-        });
-        $(".slider_buttons__radio1").mouseout(function(e) {
-            $(".slider1_txt").toggleClass("active");
-        });
-        $(".slider_buttons__radio2").mouseover(function(e) {
-            $(".slider2_txt").addClass("active");
-          });
-          $(".slider_buttons__radio2").mouseout(function(e) {
-              $(".slider2_txt").toggleClass("active");
-          });
-          $(".slider_buttons__radio3").mouseover(function(e) {
-            $(".slider3_txt").addClass("active");
-          });
-          $(".slider_buttons__radio3").mouseout(function(e) {
-              $(".slider3_txt").toggleClass("active");
-          });
 
 
      $(function() {
@@ -161,7 +153,7 @@ $(".nav_btn").hover(btn_hover_on);
                 $this_button.addClass("active");
                 $this_overlay.addClass("overlay");
             }
-        
+            
             function btn_hover_off() {
                 clear_btn();
                 show_overlay(0);
@@ -169,4 +161,5 @@ $(".nav_btn").hover(btn_hover_on);
         
             show_overlay(0);
           });
+
         });
