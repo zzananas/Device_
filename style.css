@@ -291,7 +291,7 @@ a:active {
 
 
 /* ВОТ ЭТИ ДВА НИЖНИХ СЕЛЕКТОРА - ЭТО рабочий слайдер */
-/* .slider_txt.overlay {
+.slider_txt.overlay {
   display: flex;
   margin: 0 auto;
   width: 1040px;
@@ -300,10 +300,11 @@ a:active {
   font-size: 27px;
   font-family: "Gilroy";
   src: url("fonts/Gilroyextrabold.ttf");
-} */
+  /* margin-top: -110px; */
+}
 .slider_txt { 
   display: none;
-  display: inline-flex;
+  /* display: inline-flex;
   margin: 0 auto;
   width: 1040px;
   z-index:10;
@@ -311,7 +312,8 @@ a:active {
   font-size: 27px;
   font-family: "Gilroy";
   margin-left: 60px;
-  src: url("fonts/Gilroyextrabold.ttf");
+  src: url("fonts/Gilroyextrabold.ttf"); */
+
 }
 
 .span_slider1 {
