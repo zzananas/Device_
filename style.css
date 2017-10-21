@@ -245,23 +245,10 @@ a:active {
 }
 
 /* SLIDER */
-.slider_inner {
-  display: flex;
-  width: 1040px;
-  width: 100%;
-  z-index:10;
-  
-}
-/* .slider_buttons > * {
- width: 13px;
- height: 13px;
- background: url("img/slider_btn_inactive.png") no-repeat;
- border-radius: 100%;
 
-}
 .slider_buttons > *:hover {
   cursor: pointer;
-} */
+} 
 .slider_buttons{
   position: absolute;
   display: flex;
@@ -274,12 +261,8 @@ a:active {
   z-index: 19;
 }
 .slider_buttons__radio{
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
   width: 12px;
   height: 12px;
-  /* border: 1.5px solid black; */
   background: url("img/slider_btn_inactive.png") no-repeat;
   border-radius: 100px;
   cursor: pointer;
@@ -289,22 +272,26 @@ a:active {
   background: url("img/slider_btn_active.png") no-repeat;
 }
 .slider1 {
-  /* overflow: hidden;
-  white-space: nowrap; */
+  overflow: hidden;
+  white-space: nowrap;
   width: 1160px;
   height: 480px;
   margin: 0 auto;
   margin-top: -111px;
   z-index: 1;
 }
-/* .slider1 > * {
+.slider1 > * {
   width: 100%;
   height: 100%;
   display: inline-block;
   overflow: hidden;
   transition: margin 0.5s ease-out;
-} */
-.slider_txt.overlay {
+}
+
+
+
+/* ВОТ ЭТИ ДВА НИЖНИХ СЕЛЕКТОРА - ЭТО рабочий слайдер */
+/* .slider_txt.overlay {
   display: flex;
   margin: 0 auto;
   width: 1040px;
@@ -313,10 +300,20 @@ a:active {
   font-size: 27px;
   font-family: "Gilroy";
   src: url("fonts/Gilroyextrabold.ttf");
-}
-.slider_txt {
+} */
+.slider_txt { 
   display: none;
+  display: inline-flex;
+  margin: 0 auto;
+  width: 1040px;
+  z-index:10;
+  justify-content: space-between;
+  font-size: 27px;
+  font-family: "Gilroy";
+  margin-left: 60px;
+  src: url("fonts/Gilroyextrabold.ttf");
 }
+
 .span_slider1 {
   display: flex;
   position: relative;
@@ -530,7 +527,7 @@ a:active {
 .background_description {
   position: absolute;
   height: 290px;
-  margin-top: 180px;
+  margin-top: 95px;
   width: 100%;
   background-color: #e5e5e5;
 }
@@ -905,10 +902,11 @@ logo__html:active {
   display: none; /* Hidden by default */
   justify-content: center;
   align-items: center;
-  position: fixed; /* Stay in place */
-  z-index: 1999; /* Sit on top */
-  left: 270px;
-  top: 50px;
+  position: absolute; 
+  left: 100px;
+   top: 50px; 
+  z-index: 1999; 
+  margin: 0 auto;
   width: 960px; /* Full width */
   height: 553px; /* Full height */
   overflow: auto; /* Enable scroll if needed */
@@ -918,20 +916,36 @@ logo__html:active {
   box-shadow: 0 0 30px;
 }
 .modal_window.active {
-  display: flex; /* Hidden by default */
+  display: flex;
   justify-content: center;
   align-items: center;
-  position: fixed; /* Stay in place */
-  z-index: 1999; /* Sit on top */
-  left: 270px;
-  top: 50px;
-  width: 960px; /* Full width */
-  height: 553px; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: white; /* Fallback color */
-  /* background-color: rgba(0,0,0,0.4); Black w/ opacity */
-  /* z-index: 9999; */
+  position: absolute;
+  z-index: 1999;
+  left: 100px;
+  top: -700px;
+  width: 960px;
+  height: 553px;
+  background-color: white;
+  z-index: 9999; 
   box-shadow: 0 0 30px;
+} 
+.modal_window_wrap {
+  width: 100%;
+  margin: 0 auto;
+}
+.modal_overlay {
+  display: none;
+}
+.modal_overlay.active {
+  display: flex;
+  background-color: black;
+  height: 100%;
+  left: 0;
+  opacity: 0.6;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
 }
 .modal_window__container{ 
   display: flex;
@@ -980,6 +994,7 @@ font-family: "Gilroy";
   min-width: 760px;
   max-height: 150px;
   min-height: 150px;
+  padding-top: 10px;
 }
 .modal_close_img{
   position: absolute;;
